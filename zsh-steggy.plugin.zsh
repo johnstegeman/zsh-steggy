@@ -30,19 +30,19 @@ export HISTFILESIZE=1000000000
 export HISTSIZE=1000000000
 export SAVEHIST=1000000000
 
-FZF_DEFAULT_OPTS="
---border
---height 80%
---extended
---ansi
---reverse
---cycle
---bind ctrl-s:toggle-sort
---bind 'alt-e:execute($EDITOR {} >/dev/tty </dev/tty)'
---preview \"(bat --color=always {} || ls -l --color=always {}) 2>/dev/null | head -200\"
---preview-window right:60%
-"
-FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git 2>/dev/null"
+#FZF_DEFAULT_OPTS="
+#--border
+#--height 80%
+#--extended
+#--ansi
+#--reverse
+#--cycle
+#--bind ctrl-s:toggle-sort
+#--bind 'alt-e:execute($EDITOR {} >/dev/tty </dev/tty)'
+#--preview \"(bat --color=always {} || ls -l --color=always {}) 2>/dev/null | head -200\"
+#--preview-window right:60%
+#"
+#FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git 2>/dev/null"
 
 #########################
 #       Aliases         #
@@ -53,7 +53,7 @@ alias -- -='cd -'
 alias md='mkdir -p'
 alias rd=rmdir
 
-alias vi=nvim
+#alias vi=nvim
 
 alias lg=lazygit
 
